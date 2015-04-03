@@ -20,7 +20,6 @@ friends = {
                         ]
            }  # Dictionary
 
-# =============== #
 
 # # ===== Control Statements ===== #
 
@@ -29,31 +28,23 @@ friends = {
 if name:
     print name
 
-# if Statement End
-
-# if else Statement Start
+# if else
 
 if name and salary > 45000:
     print name + " is earning good amount of money"
 else :
     print name + " is earning decent salary"    
-    
-# if else Statement End    
-    
-# else if ladder Statement  Start  
+        
+# else if ladder  
     
 if name and lastname:
     print lastname + " " + name
 elif name and firstname:
         print name + " " + firstname
 
-# else if ladder Statement End
-
-# =============== #
-
 # # ===== Loops ===== ##
 
-# While Loop Start
+# While Loop
 
 listlen = len(known_languages)
 i = 0
@@ -62,9 +53,7 @@ while i < listlen:
     print known_languages[i]
     i += 1
 
-# While Loop End
-
-# For Loop Start
+# For Loop
 
 for day in working_days:
     print day
@@ -72,10 +61,6 @@ for day in working_days:
 for lang in known_languages:
     print lang
     
-# For Loop End
-
-# =============== #
-
 # # ===== Functions ===== ##
 
 def log(text):
@@ -88,11 +73,9 @@ def sum(operand_1, operand_2):
 
 log(sum(1, 2))
 
-# =============== #
-
 # # ===== Classes and Objects ===== ##
 
-class Employee: # Class Declaration
+class Employee:  # Class Declaration
     "This Class is about an Employee Details"
     def __init__(self, name, age, salary, village):
         self.name = name
@@ -111,10 +94,9 @@ class Employee: # Class Declaration
         print "Age:- " + str(self.age)
         print "Village:-" + self.village
         
-emp_1 = Employee("Nelli.Prashanth Kumar",23,30000,"Huzurabad") #Object Initialization
+emp_1 = Employee("Nelli.Prashanth Kumar", 23, 30000, "Huzurabad")  # Object Initialization
 
 emp_1.printDetails()
 
-# =============== #
 
 
